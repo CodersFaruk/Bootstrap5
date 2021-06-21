@@ -1,0 +1,183 @@
+html {scroll-behavior: smooth;}
+
+.nav-fixed {
+  width: 100%;
+  color: transparent;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
+.nav-active {
+  background-color: #fff;
+  border-bottom: 0.3rem solid red;
+  color: red !important;
+}
+.F-color {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #c9371c;
+}
+.F-color:hover {
+  color: #ff2807;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,40,7, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #c9371c;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.topFixedBanner {
+  background-image: url("img/main-image.jpg");
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.topBannerOverlay {
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  background: rgba(78, 66, 56, 0.8);
+}
+
+.bannerContent {
+  margin-top: 17rem;
+}
+.title {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.bannerContent h4 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.bgRed {
+  background-color: #c9371c;
+}
+hr.b {
+  margin: 0 auto;
+  border: 3px solid #c9371c;
+  max-width: 3.25rem;
+  display: block;
+}
+
+.banarBtn {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  background-color: #c9371c;
+  color: #fff;
+}
+.banarBtn:hover {
+  background-color: #ffffff;
+  color: rgb(255, 0, 0);
+}
+
+.para {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 300px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+hr.r {
+  border: 3px solid #fff;
+  margin: 0 auto;
+  max-width: 3.25rem;
+  display: block;
+}
+
+.linkItem a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #343a40;
+  font-weight: 600;
+}
+.linkItem a:hover {
+  text-decoration: underline;
+}
+
+.bannerImg {
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url(img/pic-1.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linkBtn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #c9371c;
+  display: block;
+  margin-top: 1.5rem;
+}
+.linkBtn:hover {
+  color: #ff2807;
+}
+
+.bannerImg2 {
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url(img/pic-3.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .title {
+    font-weight: 600;
+    font-size: 3rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .title {
+    font-weight: 600;
+    font-size: 2.25rem;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px)  */
+@media (max-width: 575.98px) {
+  .title {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+}
