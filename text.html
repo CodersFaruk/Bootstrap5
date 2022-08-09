@@ -1,0 +1,15 @@
+ $billInfo= Bill::where('customer_id',$id)->get( array(
+            DB::raw('SUM(January) as total_Jan'),
+            DB::raw('SUM(February) as total_Feb'),
+            DB::raw('SUM(March) as total_Mar'),
+            DB::raw('SUM(April) as total_Apr'),
+            DB::raw('SUM(May) as total_May'),
+            DB::raw('SUM(June) as total_Jun'),
+            DB::raw('SUM(July) as total_Jul'),
+            DB::raw('SUM(August) as total_Aug'),
+            DB::raw('SUM(September) as total_Sept'),
+            DB::raw('SUM(October) as total_Oct'),
+            DB::raw('SUM(November) as total_Nov'),
+            DB::raw('SUM(December) as total_Dec'),
+            
+          ));
